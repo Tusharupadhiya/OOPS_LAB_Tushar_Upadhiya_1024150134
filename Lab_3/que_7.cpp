@@ -15,6 +15,13 @@ class Complex{
    cout<<"Sum is: "<<temp.real<<" + i"<<temp.imag<<endl;
    return temp;
     }
+    Complex Sum(Complex &obj){
+    Complex temp(0,0);
+    temp.real = this ->real + obj.real;
+    temp.imag = this ->imag + obj.imag;
+    cout<<"Sum is: "<<temp.real<<" + i"<<temp.imag<<endl;
+    return temp;
+    }
 };
 
 int main() {
@@ -22,6 +29,7 @@ int main() {
     Complex c2(4,5);
     
     Complex c3 = c1.add(c2);
+    Complex c4 = c1.Sum(c2);
 
    
 
