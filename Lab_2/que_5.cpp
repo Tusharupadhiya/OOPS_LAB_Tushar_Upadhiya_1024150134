@@ -11,7 +11,7 @@ class Complex{
         real = r;
         imaginary = l;
     }
-    void display(){
+    void displayComplex(){
         cout<<real<<" + "<<imaginary<<"i"<<endl;
     }
     void sum(Complex c2){
@@ -23,9 +23,9 @@ class Complex{
 
 int main() {
     Complex c1(3.5, 2.0);
-    c1.display();
+    c1.displayComplex();
     Complex c2(1.2, 4.3);
-    c2.display();
+    c2.displayComplex();
     c1.sum(c2);
     return 0;
 }

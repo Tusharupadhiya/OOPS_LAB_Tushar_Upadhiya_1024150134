@@ -8,6 +8,8 @@ class Complex{
         real = r;
         imag = i;
     }
+
+    //pass by value
     Complex add(Complex obj){
    Complex temp(0,0);
    temp.real = this ->real + obj.real;
@@ -15,7 +17,9 @@ class Complex{
    cout<<"Sum is: "<<temp.real<<" + i"<<temp.imag<<endl;
    return temp;
     }
-    Complex Sum(Complex &obj){
+    
+    //pass by reference
+    Complex Sum(const Complex &obj){
     Complex temp(0,0);
     temp.real = this ->real + obj.real;
     temp.imag = this ->imag + obj.imag;
